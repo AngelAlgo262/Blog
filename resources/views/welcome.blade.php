@@ -1,11 +1,20 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
-        <meta charset="utf-8">
+        <meta charset="utf-8" />
+        <meta name="author" content="Angel Ocampo" />
+        <meta name="description" content="Portafolio de desarrollo web de Angel Ocampo" />
+        <meta name="keywords" content="HTML, CSS, JavaScript, PHP, Vue, Laravel" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <title>Laravel</title>
-
+        <!-- Favicon -->
+        <link rel="shortcut icon" type="image/png" href="{{ asset('/img/favicon_192x192.png') }}">
+    <link rel="shortcut icon" sizes="192x192" href="{{ asset('/img/favicon_192x192.png') }}">
+        {{-- <link rel="icon" href="{{ asset('public/favicon.png') }}"> --}}
+        {{-- <link rel="icon" type="image/x-icon" href="../public/favicon.png" /> --}}
+        <!-- CSRF Token -->
+        <meta name="csrf-token" content="{{ csrf_token() }}">
+    
+        <title>{{ config('app.name, Angel Ocampo | Desarrollo Web') }}</title>
         <!-- Fonts -->
         <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 
